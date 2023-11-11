@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes{
+    /* height: calc(100vh - 14rem); */
+    position: relative; 
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box{
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: white;
+    border: 10px solid red;
+    display: inline-block;
+    border-radius: .4rem;
+    font-size: 4rem;
+
+    
+
+}
