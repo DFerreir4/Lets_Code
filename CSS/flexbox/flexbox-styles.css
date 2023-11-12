@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-main{
-    /* padding: 7rem 0; */
-}
-
 .boxes{
     /* height: calc(100vh - (7*2rem)); */
     height: 100vh;
