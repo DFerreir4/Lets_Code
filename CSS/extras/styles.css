@@ -46,7 +46,98 @@ h1{
     text-transform: capitalize;
     text-align: center;
     font-size: 4.6rem;
+    /* display: none; */
+    visibility: hidden;
 }
+
+a{
+    background-color: steelblue;
+    color: white;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out ;
+
+    display: block;
+
+}
+
+[data-anchor="products"]{
+    background-color: steelblue;
+    color: white;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out ;
+
+    display: block;
+
+    /* transform: scale(0.5); */
+}
+
+[data-anchor="products"]:hover{
+    background-color: aqua;
+    color: white;
+    transform: scale(1.2) ;
+}
+
+[data-anchor="team"]{
+    margin-top: 2rem;
+    animation: pulse .2s infinite;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.35);
+        opacity: .6;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.spinner-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner{
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes load{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto', arial, cursive;
@@ -66,23 +157,12 @@ p{
     text-indent: 90px;
 }
 
-a{
-    font-size: 2.4rem;
-    color: red;
-}
 
-a:visited{
-    color: darkgreen;
-}
-
-a:hover{
-    color: coral;
-}
 
 
 div.bg{
-    height: 50vh;
-    width: 100vw;
+    height: 20vh;
+    width: 100%;
     background-color: #555;
     background-image: url('https://images.unsplash.com/photo-1682685797741-f0213d24418c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
@@ -168,8 +248,33 @@ img{
 }
 
 @media screen and (min-width: 1000px){
+    .bg{
+        height: 50vh;
+    }
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 999px){
+    .bg{
+        height: 80vh;
+    }
+
+}
+
+@media  screen and (max-width: 766px) {
+    /* table {
+        display: none;
+    }
+
+    h1{
+        color: red;
+    } */
+    
+}
+
+
+
+
 
 @media print{
     .bg{
