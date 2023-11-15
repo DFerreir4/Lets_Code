@@ -1,25 +1,12 @@
-import MeuComponente from "./components/MeuComponente"
+import Meucontador from "./Meucontador"
 
 function App() {
   
 
   return (
     <div>
-     <h1>Olá Mundo, React!</h1>
-     <MeuComponente/>
-     <MeuBotao conteudo='me clique'/>
-
-     <MeuBotao conteudo='depois aqui'/>
-
-     <MeuBotao conteudo='e por fim aqui'/>
+     <Meucontador/>
     </div>
-  )
-}
-
-function MeuBotao(props) {
-
-  return(
-    <button>{props.conteudo}</button>
   )
 }
 
