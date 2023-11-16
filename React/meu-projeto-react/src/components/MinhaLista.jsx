@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 const minhaLista = [
     { id: 1, value: 'Fruta'},
     { id: 2, value: 'Legume'},
@@ -7,6 +9,8 @@ const minhaLista = [
 
 export default function MinhaLista() {
 
+    const [produtos, setProdutos] = useState(minhaLista)
+    
     return minhaLista.map( (item) => {
         return (
             <div key={item.id}>
