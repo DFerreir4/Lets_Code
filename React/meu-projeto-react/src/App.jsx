@@ -1,11 +1,11 @@
-import Meucontador from "./Meucontador"
+import MinhaLista from "./components/MinhaLista"
 
 function App() {
-  
 
   return (
     <div>
-     <Meucontador/>
+     <h1>Listas no React</h1>
+     <MinhaLista/>
     </div>
   )
 }
